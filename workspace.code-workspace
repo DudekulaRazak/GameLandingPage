@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"new": "cpp",
+			"array": "cpp"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "Javascript tutorials from pdf"
+	}
+}

@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: #191818;
+    padding: 10px;
+}
+header a{
+    padding: 10px;
+    font-size: medium;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+header a:hover{
+    background-color: orange;
+    color: #fafafa;
+}
+header button{
+    cursor: pointer;
+    border: .2px solid orange;
+    border-radius: 10px;
+    padding: 6px;
+    color: rgb(255, 255, 255);
+    background-color: orange;
+    position: relative;
+    left: 55%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header button:hover{
+    background-color:#242323;
+    transform: scale(1.1);
+    transition: 1s;
+}
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.4), #242323) ,url(images/samurai2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    height:  30px;
+    position: relative;
+}
+
+
+
+
+
+.gametitle{
+    color: rgb(241, 113, 9);
+    position: absolute;
+    top: 45%;
+    left: 30%
+}
+.gametitle h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+.gametitle p {
+    font-size: 20px;
+    position: absolute;
+    top: 0%;
+    left: 7%;
+}
+
+
+
+
+.bannerbtn{
+    text-align: center;
+    margin: 70px;
+    position: absolute;
+    top: 60%;
+    left: 50%; 
+   
+}
+.bannerbtn a{
+   text-decoration: none;
+   color: #fff;
+   border: .5px solid rgb(255, 255, 255);
+   border-radius: 5px;
+   padding: 10px;
+   margin: 7px;
+}
+.bannerbtn a:hover {
+    color: rgb(0, 0, 0);
+    z-index: -1;
+    background: #fff;
+}
+
+
+
+#banner2{
+    background: linear-gradient(rgba(0,0,0,0.4), #242323) ,url(images/samurai.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+#banner2 p{
+    color: rgb(241, 113, 9);
+    font-size: larger;
+    padding: 20%;
+}
+
+
+
+.container {
+    align-items: center;
+    background-color: #242323;
+}
+.container img{
+    position: relative;
+    padding: 50px;
+    top: 10%;
+    left: 15%;
+    width:60%
+}
+.container a{
+    text-decoration: none;
+    color: rgb(255, 132, 0);
+    border: .5px solid rgb(241, 113, 9);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 13%;
+}
+.container a:hover {
+    color: rgb(220, 218, 218);
+    padding: 13px;
+    border: .5px solid rgb(235, 167, 22);
+    background: rgb(213, 119, 18);
+
+}
+.images{
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    background-color: #242323;
+}
+.images img{
+    margin-left: 5%;
+    padding: 20px;
+    width: 40%;
+}
+
+
+.contactus{
+    background-color: #191818;
+    padding: 10%;
+}
+.contact h3{
+    text-align: center;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact ul{
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+.contact ul li{
+    color: #929292;
+}
+
+
+.socialmedia{
+    text-align: center;
+}
+.socialmedia .fa{
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 3px solid rgb(241, 113, 9);
+    border-radius: 6px;
+    color: rgb(241, 113, 9);
+    cursor: pointer;
+    transition: .5s;
+}
+.socialmedia .fa:hover{
+    background-color: rgb(241, 113, 9);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+
+
+footer{
+    background-color: rgb(43, 42, 42);
+    padding: 15px;
+}
+footer a{
+    color: #fff;
+    font-style: oblique;    
+    margin-left: 20px;
+    text-decoration:none;
+}
+
+@media screen and (max-width:770px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header button{
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+    .gametitle{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+    .gametitle h1{
+        font-size: 50px;
+    }
+    .gametitle p{
+        position: relative;
+        font-size: 30px;
+    }
+    .bannerbtn{
+        position: absolute;
+        left: 10%;
+        display: flex;
+    }
+    .container img{
+        position: relative;
+        left: 5%;
+    }
+    .container a{
+        position: relative;
+        top: 0;
+        bottom: 10px;
+    }
+}
